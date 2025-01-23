@@ -34,7 +34,7 @@ letter-spacing: -0.05569rem;
 export const Description = styled.p`
 color: #000;
 font-family: sans-serif;
-font-size: 0.9rem;
+font-size: 1rem;
 font-style: normal;
 font-weight: 400;
 line-height: 1.8rem; /* 177.778% */

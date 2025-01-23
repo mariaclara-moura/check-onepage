@@ -44,7 +44,7 @@ export const List = styled.ul<Props>`
   }
 
   @media screen and (max-width: 1024px) {
-    background-color: white;
+    background-color: #fff;
     width: 70%;
     display: ${({ toggle }) => (toggle === true ? 'flex' : 'none')};
     flex-direction: column;

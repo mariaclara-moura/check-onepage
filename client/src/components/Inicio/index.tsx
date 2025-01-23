@@ -16,7 +16,14 @@ export default function Inicio() {
           praticidade, menos <br></br>complicações.
         </p>
         <ButtonGroup>
+        <ScrollLink
+              to={'Beneficios'}
+              smooth={true}
+              duration={500}
+              spy={true}
+            >
           <button className="primary">Começar agora</button>
+          </ScrollLink>
           <ScrollLink
               to={'Services'}
               smooth={true}

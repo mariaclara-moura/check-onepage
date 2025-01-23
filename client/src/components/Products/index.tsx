@@ -4,7 +4,6 @@ import {
   Title,
   Table,
   TableRow,
-  TableHeader,
   TableCell,
   CheckIcon,
   Bullet,
@@ -23,6 +22,7 @@ export default function Products() {
     <button className="secondary">Arrumação <br /> e Limpeza</button>
     </ButtonGroup>
   <Table>
+  <tbody>
       <TableRow>
         <TableCell><Bullet color="#1AB2A0" /> Master</TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
@@ -35,12 +35,14 @@ export default function Products() {
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
+        <TableCell></TableCell>
       </TableRow>
       <TableRow>
         <TableCell><Bullet color="#0C373C" /> Superior</TableCell>
-      
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
+        <TableCell></TableCell>
+        <TableCell></TableCell>
       </TableRow>
       <TableRow>
         <TableCell><Bullet color="#0A4C4C" /> Standard</TableCell>
@@ -49,6 +51,7 @@ export default function Products() {
         <TableCell></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
       </TableRow>
+      </tbody>
   </Table>
 </PlansContainer>
 

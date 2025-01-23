@@ -7,6 +7,9 @@ export const PlansContainer = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
+  @media (max-width: 768px) {
+    gap:1rem;
+  }
 
 `;
 
@@ -25,26 +28,15 @@ export const Table = styled.table`
   border-collapse: collapse;
   align-self: center;
   margin-top: 2rem;
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
 `;
 
 export const TableRow = styled.tr`
   height: 5rem;
   border-bottom: 0.1rem solid #768E8C;
 `;
-
-export const TableHeader = styled.th`
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center;
-  border: 1.5px solid #00B2A0;
-  color: #00B2A0;
-  font-family: Montserrat;
-  font-style: normal;
-  line-height: 1.8125rem;
-  padding: 1rem;
-  border-radius: 15px; /* Borda arredondada */
-`;
-
 
 export const TableCell = styled.td`
   text-align: left;
@@ -79,7 +71,6 @@ export const CheckIcon = styled.span`
   }
 `;
 
-
 export const ButtonGroup = styled.div`
     display: flex;
     width: 90%;
@@ -89,7 +80,7 @@ export const ButtonGroup = styled.div`
     button {
     padding: 0.2rem 1rem;
     border-radius: 0.75rem;
-    cursor: pointer;
+    cursor: default;
     color: #F5F5F7;
     text-align: center;
     font-family: Montserrat;
@@ -106,4 +97,15 @@ export const ButtonGroup = styled.div`
     button:hover {
     opacity: 0.9;
     }
+    @media (max-width: 768px) {
+      width: 50%;
+      align-self: end ;
+      padding: 0;
+      gap: 0.2rem;
+      
+      button {
+      padding: 0.3rem;
+      font-size: 0.7rem;
+        }
+  }
 `;
