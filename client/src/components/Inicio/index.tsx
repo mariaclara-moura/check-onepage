@@ -1,0 +1,34 @@
+import React from "react";
+import {
+  Foto,
+  ContentBox,
+  ButtonGroup,
+} from "./style";
+import { Link as ScrollLink } from 'react-scroll'; 
+
+export default function Inicio() {
+  return (
+    <Foto>
+      <ContentBox  id="Inicio">
+        <h1>A gente encanta, você <br></br> recebe o elogio.</h1>
+        <p>
+          A solução completa de limpeza do seu <br></br> imóvel de praia. Mais
+          praticidade, menos <br></br>complicações.
+        </p>
+        <ButtonGroup>
+          <button className="primary">Começar agora</button>
+          <ScrollLink
+              to={'Services'}
+              smooth={true}
+              duration={500}
+              spy={true}
+            >
+          <button className="secondary">Explorar funcionalidades</button>
+          </ScrollLink>
+        </ButtonGroup>
+      </ContentBox>
+    </Foto>
+  );
+}
+
+
