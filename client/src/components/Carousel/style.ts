@@ -20,6 +20,7 @@ export const CarouselContainer = styled.div`
     left:22rem;
     @media (max-width: 758px) {
     /* left:1rem */
+    left:16rem;
   }
   }
   .slick-next {
@@ -41,6 +42,8 @@ export const CarouselContainer = styled.div`
     margin: 0;
     background-color: #12191F;
     transition: all 0.3s ease;
+    @media (max-width: 758px) { 
+      width: 5rem; }
 
   }
 

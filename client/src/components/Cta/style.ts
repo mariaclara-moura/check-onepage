@@ -31,6 +31,9 @@ margin-left: -2.5%;
     padding: 2rem;
     width: 15rem;
       }
+  @media (max-width: 400px) {
+      margin-left: 15%;
+      }
 `;
 
 export const Title = styled.h1`
@@ -62,6 +65,8 @@ export const AppImage = styled(Image)`
     width: 50%; 
     height: auto;
     margin-top: 2%;}
+  @media (max-width: 400px) {
+      width:0; }
 `;
 
 export const IphoneImg = styled(Image)`
@@ -79,4 +84,7 @@ export const First = styled.div`
   align-items: center;
   @media (max-width: 1024px) {
     align-items:flex-start;  }
+  @media (max-width: 400px) {
+      flex-direction: column;
+      align-items: center; }
 `;
