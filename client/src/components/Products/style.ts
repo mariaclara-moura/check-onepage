@@ -30,6 +30,7 @@ export const Table = styled.table`
   margin-top: 2rem;
   @media (max-width: 768px) {
     margin-top: 0;
+    width: 95%;
   }
 `;
 
@@ -40,16 +41,19 @@ export const TableRow = styled.tr`
 
 export const TableCell = styled.td`
   text-align: left;
-  padding: 1rem;
+  padding: 0.9rem;
   color: #2C2C2C;
   font-family: Epilogue;
   font-size: 1rem;
   font-weight: 500;
   line-height: 2rem;
   
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 0.9rem;
-    padding: 0.5rem;
+    padding: 1rem ;
+  }
+  @media (max-width: 768px) {
+    padding: 0.5rem 1.5rem ;
   }
 `;
 
@@ -65,6 +69,7 @@ export const Bullet = styled.span`
 export const CheckIcon = styled.span`
   font-size: 1.75rem;
   color: #115D6E;
+  
 
   @media (max-width: 768px) {
     font-size: 1.5rem;
@@ -87,25 +92,36 @@ export const ButtonGroup = styled.div`
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 500;
-      }
-
+    }
     .secondary {
     background-color: #fff;
     color: #00B2A0;
     border: 0.12rem solid #00B2A0; 
+    @media (max-width: 1024px) {
+      border: none;
+      }
    }
     button:hover {
     opacity: 0.9;
     }
+    @media (max-width: 1024px) {
+      align-self: center ;
+      padding: 0 1rem;
+      gap: 0.1rem;
+      button {
+      padding: 0.6rem
+        }
+    }
+    //760-570, 850-1310
     @media (max-width: 768px) {
-      width: 50%;
-      align-self: end ;
-      padding: 0;
-      gap: 0.2rem;
+      align-self: center ;
+      gap: 1%;
+      margin-left: 2rem;
       
       button {
-      padding: 0.3rem;
+      padding: 0.1rem;
       font-size: 0.7rem;
+      border: none;
         }
   }
 `;

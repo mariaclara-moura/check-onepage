@@ -12,9 +12,12 @@ export const Container = styled.div`
   padding: 1.5rem;
   gap: 0;
   margin: 5rem 0;
-  `;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }  `;
 
 export const TextSection = styled.div`
+display: flex;
 width: 23rem;
 height: auto;
 padding: 3.5rem 1.5rem;
@@ -24,6 +27,10 @@ background-repeat: no-repeat;
 background-size: contain;
 margin-top: 0.8%;
 margin-left: -2.5%;
+ @media (max-width: 1024px) {
+    padding: 2rem;
+    width: 15rem;
+      }
 `;
 
 export const Title = styled.h1`
@@ -34,24 +41,42 @@ font-style: normal;
 font-weight: 600;
 line-height: 2.6rem; /* 148% */
 letter-spacing: -0.05569rem;
+margin-right: 5rem;
+@media (max-width: 1024px) {
+  width: 80%;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5rem;
+   }
 `;
 
 export const Highlight = styled.span`
   text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
 `;
 
 
 export const AppImage = styled(Image)`
   width: 26rem;
   height: 25rem;
+  @media (max-width: 1024px) {
+    width: 50%; 
+    height: auto;
+    margin-top: 2%;}
 `;
 
 export const IphoneImg = styled(Image)`
     width: 12.5rem;
     height: auto;
+    @media (max-width: 1024px) {
+    height: 20rem;
+    width: auto; 
+    margin-top: 2%;}
+`;
+
+export const First = styled.div`
+  display: flex;
+  gap: 0;
+  align-items: center;
+  @media (max-width: 1024px) {
+    align-items:flex-start;  }
 `;

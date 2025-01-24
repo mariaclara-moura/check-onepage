@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
-// MARK: RESPONSIVIDADE!!
-
 export const Card = styled.div`
   display: flex;
-  width: 20rem;
-  height: 15.4rem;
+  width:60%;
+  margin: 1rem auto;
+  height: auto;
   padding: 1.5rem 1.25rem;
   flex-direction: column;
   align-items: flex-start;
@@ -20,7 +19,13 @@ export const Header = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 `;
+
 export const Name = styled.p`
  color: #000;
   font-family: Montserrat;
@@ -29,6 +34,10 @@ export const Name = styled.p`
   font-weight: 500;
   line-height: 1.8rem; 
   letter-spacing: -0.05569rem;
+  @media (max-width: 1100px) {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
 `;
 export const Data = styled.p`
  color: #000;
@@ -49,6 +58,10 @@ export const Title = styled.h3`
   line-height: 1.8rem; 
   letter-spacing: -0.05569rem;
   align-self: stretch;
+  @media (max-width: 1100px) {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 `;
 
 export const Text = styled.p`
@@ -59,4 +72,8 @@ export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 1.6rem; /* 170% */
+  @media (max-width: 1100px) {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
 `;

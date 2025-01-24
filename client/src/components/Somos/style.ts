@@ -1,78 +1,39 @@
 import styled from "styled-components";
 import Image from "next/image";
-import { Stars } from 'assets';
-
-
- export const WhiteBg = styled.div`
-   width:100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: pink;
-
-//   @media (max-width: 1024px) {
-//     height: 770px;
-//   }
-
-//   @media (min-width: 1550px) {
-//   height: 520px;
-//  }
-//  @media (min-width: 2000px) {
-//     height: 600px;
-// }
-//   @media (max-width: 768px) {
-//     display: block;
-//     padding-left: 2%;
-//     padding-right: 2%;
-//     padding-top: 6%;
-//     height: 800px;
-//   }
-`; 
+import { Arrumacao } from 'assets';
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-rows: 2;
+
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #EBF8F4;
+  background: none;
   width: 80%;
-  padding: 1.5rem;
   gap: 0;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
   `;
 
-export const TextSection = styled.div`
-width: 25rem;
-height: auto;
-flex-shrink: 0;
-background-image: url(${Stars.src});
-background-repeat: no-repeat;
-background-size: cover;
-display: flex;
-flex-wrap: wrap;
+export const TextSection = styled.div` 
+  background-image: url(${Arrumacao.src}); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  width: 100%; 
+  height: 27rem; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  padding: 3rem 2.5rem 0 2rem;
 
-`;
-
-export const Title = styled.h1`
-color: #F5F5F7;
-font-family: Arial;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 600;
-line-height: 2.6rem; /* 148% */
-letter-spacing: -0.05569rem;
-`;
-
-export const IphoneImg = styled(Image)`
-    width: 12.5rem;
-    height: auto;
-`;
-
-export const ButtonGroup = styled.div`
-    display: flex;
-    gap: 1rem;
-
-    button {
-    padding: 0.6rem 1rem;
+  @media (max-width: 1024px) {  
+  padding: 2rem 1rem 0 1rem;
+gap: 0.8rem;  
+margin: 0;}
+  
+  button {
+    padding: 0.55rem 1.2rem;
     border: none;
     border-radius: 0.75rem;
     cursor: pointer;
@@ -82,7 +43,13 @@ export const ButtonGroup = styled.div`
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.5rem;    }
+    line-height: 1.5rem;   
+  
+    @media (max-width: 1024px) {
+      font-size: 0.8rem; 
+      line-height: 1rem; 
+      padding: 0.5rem 1rem;  }
+}
 
     .primary {
         background: #00B2A0;
@@ -96,4 +63,29 @@ export const ButtonGroup = styled.div`
     button:hover {
     opacity: 0.9;
     }
+     `;
+
+export const Description = styled.p`
+color: #000;
+font-family: sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem; 
+padding: 1rem 0 2rem 0;
+@media (max-width: 1024px) {
+padding: 0;  }
+`;
+
+export const Title = styled.h1`
+color: #000;
+font-family: Arial;
+font-size: 2.3rem;
+font-style: normal;
+font-weight: 700;
+line-height: 2.8rem;
+letter-spacing: -0.06rem;
+@media (max-width: 1024px) {
+ font-size: 1.7rem; 
+ line-height: 2rem;}
 `;

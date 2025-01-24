@@ -10,10 +10,10 @@ export default function Inicio() {
   return (
     <Foto>
       <ContentBox  id="Inicio">
-        <h1>A gente encanta, você <br></br> recebe o elogio.</h1>
+        <h1>A gente encanta, você recebe o elogio.</h1>
         <p>
-          A solução completa de limpeza do seu <br></br> imóvel de praia. Mais
-          praticidade, menos <br></br>complicações.
+          A solução completa de limpeza do seu imóvel de praia. Mais
+          praticidade, menos complicações.
         </p>
         <ButtonGroup>
         <ScrollLink

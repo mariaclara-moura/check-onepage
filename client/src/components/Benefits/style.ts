@@ -1,149 +1,89 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const Container = styled.div`
   background: var(--degrade, linear-gradient(180deg, #1BB7A7 0%, #66FBEC 46%, #A3FFF6 96.5%));
   width: 80%;
-  height: 30rem;
+  height: auto;
   display: flex;
 
   @media (max-width: 1024px) {
-    height: 770px;
-  }
-
-  @media (min-width: 1550px) {
-  height: 520px;
+  flex-direction: column;
+  margin: 3rem 2rem;
  }
- @media (min-width: 2000px) {
-    height: 600px;
-}
-  @media (max-width: 768px) {
-    display: block;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 6%;
-    height: 800px;
-  }
 `;
 
 export const Title = styled.h1`
-  color: #333;
-  font-family: Open Sans;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 66.667% */
-  text-transform: uppercase;
-  margin-top: 1%;
-`;
-
-export const Destaque = styled.span`
-  color: #333;
-  font-family: Open Sans;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
-`;
-
-export const Linha = styled.div`
-  width: 100%;
-  height: 2px;
-  flex-shrink: 0;
-  background: linear-gradient(90deg, #333 0%, rgba(255, 255, 255, 0) 100%);
-  margin-top: 24px;
-  margin-bottom: 3%;
-
-  @media (max-width: 768px) {
-    margin-bottom: 10%;
-  }
-`;
-
-export const Infos = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 15%;
-  align-items: flex-start;
-  @media (max-width: 1024px) and (min-width: 768px) {
-    gap: 5%;
-    margin-top: 5% !important;
-  }
-`;
-
-export const Descrição = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 3%;
-  margin-bottom: 2%;
-
-  @media (max-width: 768px) {
-    display: block;
-    gap: 0px;
-    margin-bottom:10%;
-    text-align: center;
-    align-self: center;
-  }
-`;
-export const Descrição1 = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 3%;
-  margin-bottom: 2%;
-  margin-right: 5%;
-
-  @media (max-width: 768px) {
-    display: block;
-    gap: 0px;
-    margin-bottom:10%;
-    text-align: center;
-    align-self: center;
-  }
-`;
-
-export const Title2 = styled.h2`
-  color: #333;
-  font-family: Open Sans;
-  font-size: 18px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 19.8px; /* 110% */
+  line-height: 2.2rem; /* 134.375% */
 `;
 
-export const Text = styled.p`
-  color: #333;
-  text-align: justify;
-  font-family: Open Sans;
+export const AppImage = styled(Image)`
+  max-height: 80vh;
+  max-width: 90%;
+  width: auto;
+  margin: 1rem 3rem;
+  align-self: center;
+  @media (max-width: 1024px) {
+max-height: 60vh; }
+
+`;
+
+export const SocialImage = styled(Image)`
+  width: 10vw;  
+  height: auto;  
+  @media (max-width: 1024px) {
+    width: 18vw;
+ }
+`;
+
+export const SocialImage2 = styled(Image)`
+  width: 11vw;  
+  height: auto;
+  @media (max-width: 1024px) {
+width: 19.8vw; }  
+`;
+
+export const List = styled.ul`
+  border-radius: 0.625rem;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
+  padding: 1rem 2rem;
+`;
+
+export const ListItem = styled.li`
+  color: #0D1714;
+  font-family: Montserrat;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.92106rem;
-  line-height: 1.57894rem;
-
-  @media (max-width: 768px) {
-    align-self: center;
-  }
-
+  line-height: 1.5625rem;
 `;
 
 export const Section = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
   }
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-  }
+
 `;
 export const Organize = styled.div`
   display: flex;
   flex-direction: column;
-  /* margin-right: 5%; */
-
-@media (max-width: 1024px) and (min-width: 768px) {
-  margin-bottom:3%;
-  margin-top:-6%;}
+  align-items: flex-start;
+  margin:3rem 2.5rem 2rem 0;
+  gap:1rem;
+  @media (max-width: 1024px) {
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
 `;

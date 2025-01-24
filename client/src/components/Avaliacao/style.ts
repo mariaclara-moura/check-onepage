@@ -4,13 +4,14 @@ import { Familia } from 'assets';
 
 export const Container = styled.div`
     width: 100%;
-    height: 34rem;
+    height: auto;
+    min-height: 85vh; 
     background-image: url(${Familia.src});
     background-repeat: no-repeat;
+    background-position: right top;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    background-position: center;
     @media (max-width: 1024px) {
         justify-content: center; 
        }
@@ -23,33 +24,36 @@ export const Title = styled.h1`
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
-    margin: 5rem 0 2rem  7rem;
+    margin: 5rem 0 2rem  6rem;
 `;
 
-// MARK: RESPONSIVIDADE!!
 
 export const StyledSlider = styled.div`
   width: 40%;  
   margin-left: 0; 
   align-self: flex-start;
   position: relative;
+  @media (max-width: 1024px) {
+    width: 50%;
+    margin-left: 1rem;
+  }
 
   .slick-slide {
     display: flex;
     justify-content: center;
   }
 
-  .slick-prev, .slick-next {
-    color: white; 
-  }
-
   .slick-prev {
-    left: 5rem; 
+    left: 4rem;
+    @media (max-width: 758px) {
+    left:1rem
   }
-
+  }
   .slick-next {
-    right: 5rem;  
+    right: 4rem;  
+    @media (max-width: 758px) {
+    right:1rem
   }
-
+  }
 `;
 
