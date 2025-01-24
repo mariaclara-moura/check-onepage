@@ -11,6 +11,9 @@ export const Card = styled.div`
   border-radius: 0.5rem;
   gap: 1rem;
   background: #FFF;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const Header = styled.div`

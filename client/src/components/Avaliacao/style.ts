@@ -13,7 +13,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     @media (max-width: 1024px) {
-        justify-content: center; 
+        justify-content:center; 
        }
 `;
 
@@ -24,7 +24,11 @@ export const Title = styled.h1`
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
-    margin: 5rem 0 2rem  6rem;
+    margin: 3rem 0 2rem  6rem;
+    @media (max-width: 1024px) {
+        margin: 0 2rem;
+    }
+   
 `;
 
 
@@ -35,7 +39,7 @@ export const StyledSlider = styled.div`
   position: relative;
   @media (max-width: 1024px) {
     width: 50%;
-    margin-left: 1rem;
+    margin-left: 3rem;
   }
 
   .slick-slide {
@@ -46,13 +50,13 @@ export const StyledSlider = styled.div`
   .slick-prev {
     left: 4rem;
     @media (max-width: 758px) {
-    left:1rem
+    left:-2rem;
   }
   }
   .slick-next {
     right: 4rem;  
     @media (max-width: 758px) {
-    right:1rem
+    right:-2rem;
   }
   }
 `;

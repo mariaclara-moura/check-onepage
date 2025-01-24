@@ -28,8 +28,10 @@ export const AppImage = styled(Image)`
   width: auto;
   margin: 1rem 3rem;
   align-self: center;
-  @media (max-width: 1024px) {
-max-height: 60vh; }
+  @media (max-width: 1024px) { 
+width: 90%;
+height: auto;
+}
 
 `;
 
