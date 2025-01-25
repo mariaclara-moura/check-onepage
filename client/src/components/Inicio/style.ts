@@ -96,15 +96,14 @@ export const ButtonGroup = styled.div`
 }
     .primary {
         background: #00B2A0;
+        border: 2px solid #00B2A0; 
     }
 
     .secondary {
     background-color: transparent;
     color: #00B2A0;
     border: 2px solid #00B2A0; 
-    @media (max-width: 1024px) {
-        border: 1.5px solid #00B2A0;
-    } 
+    
    }
     button:hover {
     opacity: 0.9;

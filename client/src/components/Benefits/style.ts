@@ -47,7 +47,7 @@ export const SocialImage2 = styled(Image)`
   width: 11vw;  
   height: auto;
   @media (max-width: 1024px) {
-width: 19.8vw; }  
+width: 19vw; }  
 `;
 
 export const List = styled.ul`

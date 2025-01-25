@@ -27,10 +27,11 @@ export const TextSection = styled.div`
   justify-content: flex-start;
   padding: 3rem 2.5rem 0 2rem;
 
-  @media (max-width: 1024px) {  
-  padding: 2rem 1rem 0 1rem;
-gap: 0.8rem;  
-margin: 0;}
+  @media (max-width: 1024px) { 
+    background-position: bottom left;
+    padding: 2rem 1rem 0 1rem;
+    gap: 0.8rem;  
+    margin: 0;}
   
   button {
     padding: 0.55rem 1.2rem;

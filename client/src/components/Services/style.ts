@@ -63,7 +63,7 @@ export const AppImage = styled(Image)`
   height: auto;
   object-fit: contain;
   @media (max-width: 1024px) {
-    width: 70%;
+    width: 80%;
   align-self: center;
 }
 `;
