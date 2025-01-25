@@ -104,25 +104,6 @@ export const ButtonGroup = styled.div`
     button:hover {
     opacity: 0.9;
     }
-
-    /* @media (max-width: 500px) {
-      gap: 0;
-      margin-left: 3rem;
-      
-      button {
-      padding: 0.1rem;
-      font-size: 0.7rem;
-        }
-  } */
-    /* @media (max-width: 1200px) {
-      align-self: center ;
-      gap: 3%;
-      margin-right: 4rem;
-      button {
-      padding: 0.5rem;
-      font-size: 0.8rem;
-        }
-  }   */
     @media (max-width: 1024px) {
       align-self: center ;
       padding: 0 1rem;
@@ -131,15 +112,16 @@ export const ButtonGroup = styled.div`
       padding: 0.6rem
         }
     }
-
+    //760-570, 850-1310
     @media (max-width: 768px) {
       align-self: center ;
       gap: 1%;
       margin-left: 2rem;
+      
       button {
       padding: 0.1rem;
       font-size: 0.7rem;
+      border: none;
         }
-  } 
- 
+  }
 `;
