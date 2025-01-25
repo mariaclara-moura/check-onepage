@@ -112,14 +112,22 @@ export const ButtonGroup = styled.div`
       padding: 0.6rem
         }
     }
-    //760-570, 850-1310
+
+    @media (max-width: 1200px) {
+      align-self: center ;
+      gap: 3%;
+      margin-right: 4rem;
+      button {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+        }
+  }  
     @media (max-width: 768px) {
       align-self: center ;
       gap: 2%;
       button {
       padding: 0.5rem;
       font-size: 0.7rem;
-      border: none;
         }
   } 
   @media (max-width: 500px) {
@@ -129,7 +137,6 @@ export const ButtonGroup = styled.div`
       button {
       padding: 0.25rem;
       font-size: 0.7rem;
-      border: none;
         }
   }
 `;

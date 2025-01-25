@@ -29,8 +29,10 @@ export const AppImage = styled(Image)`
   margin: 1rem 3rem;
   align-self: center;
   @media (max-width: 1024px) { 
-width: 90%;
-height: auto;
+    width:auto;
+    height: auto;
+    max-height: none;
+    margin:1rem 0;
 }
 
 `;
@@ -86,6 +88,6 @@ export const Organize = styled.div`
   @media (max-width: 1024px) {
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    margin: 1rem 2rem;
   }
 `;
