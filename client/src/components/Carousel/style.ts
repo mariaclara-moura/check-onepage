@@ -20,7 +20,7 @@ export const CarouselContainer = styled.div`
     left:22rem;
     @media (max-width: 758px) {
     /* left:1rem */
-    left:20rem;
+    left:16rem;
   }
   @media (max-width:500px) {
     /* left:1rem */
@@ -70,7 +70,8 @@ export const AppImage = styled(Image)`
   margin-top: 0.9%;
   @media (max-width: 758px) {
    width: 100%;
-   height: auto;  }
+   height: auto;
+   margin-top: 0; }
 
 `;
 

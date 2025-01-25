@@ -73,8 +73,8 @@ export const IphoneImg = styled(Image)`
     width: 12.5rem;
     height: auto;
     @media (max-width: 1024px) {
-    height: 20rem;
-    width: auto; 
+    height: auto;
+    width: 50%; 
     margin-top: 2%;}
 `;
 

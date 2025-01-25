@@ -124,7 +124,8 @@ export const ButtonGroup = styled.div`
   }  
     @media (max-width: 768px) {
       align-self: center ;
-      gap: 2%;
+      gap: 1%;
+      margin-left: 2rem;
       button {
       padding: 0.5rem;
       font-size: 0.7rem;
@@ -135,7 +136,7 @@ export const ButtonGroup = styled.div`
       margin-left: 3rem;
       
       button {
-      padding: 0.25rem;
+      padding: 0.1rem;
       font-size: 0.7rem;
         }
   }
