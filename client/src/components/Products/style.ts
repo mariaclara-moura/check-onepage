@@ -105,7 +105,7 @@ export const ButtonGroup = styled.div`
     opacity: 0.9;
     }
 
-    @media (max-width: 500px) {
+    /* @media (max-width: 500px) {
       gap: 0;
       margin-left: 3rem;
       
@@ -113,7 +113,7 @@ export const ButtonGroup = styled.div`
       padding: 0.1rem;
       font-size: 0.7rem;
         }
-  }
+  } */
     /* @media (max-width: 1200px) {
       align-self: center ;
       gap: 3%;
@@ -123,12 +123,21 @@ export const ButtonGroup = styled.div`
       font-size: 0.8rem;
         }
   }   */
+    @media (max-width: 1024px) {
+      align-self: center ;
+      padding: 0 1rem;
+      gap: 0.1rem;
+      button {
+      padding: 0.6rem
+        }
+    }
+
     @media (max-width: 768px) {
       align-self: center ;
       gap: 1%;
       margin-left: 2rem;
       button {
-      padding: 0.5rem;
+      padding: 0.1rem;
       font-size: 0.7rem;
         }
   } 
