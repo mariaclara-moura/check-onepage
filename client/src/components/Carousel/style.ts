@@ -20,7 +20,7 @@ export const CarouselContainer = styled.div`
     left:22rem;
     @media (max-width: 758px) {
     /* left:1rem */
-    left:16rem;
+    left:20rem;
   }
   @media (max-width:500px) {
     /* left:1rem */
@@ -29,8 +29,8 @@ export const CarouselContainer = styled.div`
   }
   .slick-next {
     right:0rem;
-    @media (max-width: 758px) {
-    /* right:1rem */
+    @media (max-width: 758px) and (min-width: 500px) {
+      right:2rem;
   }
   }
 
@@ -68,6 +68,9 @@ export const AppImage = styled(Image)`
   height: 27rem; 
   width: auto;
   margin-top: 0.9%;
+  @media (max-width: 758px) {
+   width: 100%;
+   height: auto;  }
 
 `;
 

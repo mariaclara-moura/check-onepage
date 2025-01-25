@@ -27,12 +27,11 @@ export const Title = styled.h1`
     font-weight: 700;
     line-height: 2.5rem;
     margin: 3rem 0 2rem  6rem;
-    @media (max-width: 1024px) {
-        margin: 0 2rem;
+    @media (max-width: 768px) {
+        margin: 0 3rem;
     }
    
 `;
-
 
 export const StyledSlider = styled.div`
   width: 40%;  

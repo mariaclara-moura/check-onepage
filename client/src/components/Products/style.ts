@@ -97,14 +97,14 @@ export const ButtonGroup = styled.div`
     background-color: #fff;
     color: #00B2A0;
     border: 0.12rem solid #00B2A0; 
-    @media (max-width: 1024px) {
+    @media (max-width: 500px) {
       border: none;
       }
    }
     button:hover {
     opacity: 0.9;
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 500px) {
       align-self: center ;
       padding: 0 1rem;
       gap: 0.1rem;
@@ -115,11 +115,19 @@ export const ButtonGroup = styled.div`
     //760-570, 850-1310
     @media (max-width: 768px) {
       align-self: center ;
-      gap: 1%;
-      margin-left: 2rem;
+      gap: 2%;
+      button {
+      padding: 0.5rem;
+      font-size: 0.7rem;
+      border: none;
+        }
+  } 
+  @media (max-width: 500px) {
+      gap: 0;
+      margin-left: 3rem;
       
       button {
-      padding: 0.1rem;
+      padding: 0.25rem;
       font-size: 0.7rem;
       border: none;
         }
