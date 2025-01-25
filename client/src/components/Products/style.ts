@@ -116,12 +116,11 @@ export const ButtonGroup = styled.div`
     @media (max-width: 768px) {
       align-self: center ;
       gap: 1%;
-      margin-left: 2rem;
+      margin-left: 3rem;
       
       button {
       padding: 0.1rem;
       font-size: 0.7rem;
-      border: none;
         }
   }
 `;
