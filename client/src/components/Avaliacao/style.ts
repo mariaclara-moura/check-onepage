@@ -50,13 +50,13 @@ export const StyledSlider = styled.div`
 
   .slick-prev {
     left: 4rem;
-    @media (max-width: 758px) {
+    @media (max-width: 1024px) {
     left:-2rem;
   }
   }
   .slick-next {
     right: 4rem;  
-    @media (max-width: 758px) {
+    @media (max-width: 1024px) {
     right:-2rem;
   }
   }

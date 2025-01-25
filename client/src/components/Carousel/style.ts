@@ -14,10 +14,15 @@ export const CarouselContainer = styled.div`
     width: 3rem;
     height: 3rem;
     z-index: 10;
+    @media (max-width: 1024px) { 
+     margin-top: 35%; }
   }
 
   .slick-prev {
     left:22rem;
+    @media (max-width: 1024px) {
+    left:12rem;
+  }
     @media (max-width: 758px) {
     /* left:1rem */
     left:15rem;
@@ -48,13 +53,16 @@ export const CarouselContainer = styled.div`
     transition: all 0.3s ease;
     @media (max-width: 758px) { 
       width: 5rem; }
-
+      @media (max-width: 1024px) { 
+        width: 4rem; }
   }
 
   /* Retângulo ativo */
   .slick-dots li.slick-active {
     background: #F5F5F7; 
     width: 5.5rem;
+    @media (max-width: 1024px) { 
+      width: 4rem; }
 
   }
 
