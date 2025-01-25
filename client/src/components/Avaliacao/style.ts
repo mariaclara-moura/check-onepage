@@ -13,7 +13,9 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     @media (max-width: 1024px) {
-        justify-content:center; 
+      background-position: left center;
+      min-height: 50vh; 
+      justify-content:center; 
        }
 `;
 
