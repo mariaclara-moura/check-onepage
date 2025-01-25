@@ -53,7 +53,7 @@ export const CarouselContainer = styled.div`
     transition: all 0.3s ease;
     @media (max-width: 758px) { 
       width: 5rem; }
-      @media (max-width: 1024px) { 
+      @media (max-width: 1024px) and (min-width: 900px)  { 
         width: 4rem; }
   }
 
@@ -61,7 +61,7 @@ export const CarouselContainer = styled.div`
   .slick-dots li.slick-active {
     background: #F5F5F7; 
     width: 5.5rem;
-    @media (max-width: 1024px) { 
+    @media (max-width: 1024px) and (min-width: 900px) { 
       width: 4rem; }
 
   }
