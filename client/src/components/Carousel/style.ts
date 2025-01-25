@@ -10,7 +10,7 @@ export const CarouselContainer = styled.div`
   }
 
   .slick-prev, .slick-next {
-    margin-top: 40%;
+    margin-top: 38%;
     width: 3rem;
     height: 3rem;
     z-index: 10;
@@ -20,11 +20,11 @@ export const CarouselContainer = styled.div`
     left:22rem;
     @media (max-width: 758px) {
     /* left:1rem */
-    left:16rem;
+    left:15rem;
   }
   @media (max-width:500px) {
     /* left:1rem */
-    left:19rem;
+    left:17rem;
   }
   }
   .slick-next {
