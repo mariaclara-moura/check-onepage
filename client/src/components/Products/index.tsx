@@ -4,6 +4,7 @@ import {
   Title,
   Table,
   TableRow,
+  TableCell2,
   TableCell,
   CheckIcon,
   Bullet,
@@ -24,21 +25,21 @@ export default function Products() {
   <Table>
   <tbody>
       <TableRow>
-        <TableCell><Bullet color="#1AB2A0" /> Master</TableCell>
+        <TableCell2><Bullet color="#1AB2A0" /> Master</TableCell2>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
       </TableRow>
       <TableRow>
-        <TableCell><Bullet color="#389197" /> Premium</TableCell>
+        <TableCell2><Bullet color="#389197" /> Premium</TableCell2>
         <TableCell></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
       </TableRow>
       <TableRow>
-        <TableCell><Bullet color="#0C373C" /> Superior</TableCell>
+        <TableCell2><Bullet color="#0C373C" /> Superior</TableCell2>
         <TableCell></TableCell>
         <TableCell></TableCell>
         <TableCell><CheckIcon>✔</CheckIcon></TableCell>
@@ -46,7 +47,7 @@ export default function Products() {
       
       </TableRow>
       <TableRow>
-        <TableCell><Bullet color="#0A4C4C" /> Standard</TableCell>
+        <TableCell2><Bullet color="#0A4C4C" /> Standard</TableCell2>
         <TableCell></TableCell>
         <TableCell></TableCell>
         <TableCell></TableCell>
