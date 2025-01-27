@@ -32,17 +32,18 @@ export default function Products() {
       </TableRow>
       <TableRow>
         <TableCell><Bullet color="#389197" /> Premium</TableCell>
-        <TableCell><CheckIcon>✔</CheckIcon></TableCell>
-        <TableCell><CheckIcon>✔</CheckIcon></TableCell>
-        <TableCell><CheckIcon>✔</CheckIcon></TableCell>
         <TableCell></TableCell>
+        <TableCell><CheckIcon>✔</CheckIcon></TableCell>
+        <TableCell><CheckIcon>✔</CheckIcon></TableCell>
+        <TableCell><CheckIcon>✔</CheckIcon></TableCell>
       </TableRow>
       <TableRow>
         <TableCell><Bullet color="#0C373C" /> Superior</TableCell>
-        <TableCell><CheckIcon>✔</CheckIcon></TableCell>
-        <TableCell><CheckIcon>✔</CheckIcon></TableCell>
         <TableCell></TableCell>
         <TableCell></TableCell>
+        <TableCell><CheckIcon>✔</CheckIcon></TableCell>
+        <TableCell><CheckIcon>✔</CheckIcon></TableCell>
+      
       </TableRow>
       <TableRow>
         <TableCell><Bullet color="#0A4C4C" /> Standard</TableCell>

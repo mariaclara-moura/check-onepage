@@ -38,6 +38,7 @@ export const StyledSlider = styled.div`
   margin-left: 0; 
   align-self: flex-start;
   position: relative;
+  margin-bottom: 2%;
   @media (max-width: 1024px) {
     width: 50%;
     margin-left: 3rem;

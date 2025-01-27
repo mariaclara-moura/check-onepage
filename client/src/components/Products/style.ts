@@ -67,6 +67,7 @@ export const Bullet = styled.span`
 `;
 
 export const CheckIcon = styled.span`
+  font-family: Montserrat;
   font-size: 1.75rem;
   color: #115D6E;
   
@@ -105,18 +106,19 @@ export const ButtonGroup = styled.div`
     opacity: 0.9;
     }
     @media (max-width: 1024px) {
-      align-self: center ;
-      padding: 0 1rem;
+      align-self: center;
+      padding: 0rem;
       gap: 0.1rem;
       button {
-      padding: 0.6rem
-        }
+      padding: 0.6rem;
+      font-size: 0.8rem;
+      }
     }
-    //760-570, 850-1310
-    @media (max-width: 768px) {
+    //885-760-570
+    @media (max-width: 500px) {
       align-self: center ;
       gap: 1%;
-      margin-left: 5rem;
+      margin-left: 4rem;
       
       button {
       padding: 0.1rem;

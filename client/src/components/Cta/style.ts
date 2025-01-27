@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
-import { Stars } from 'assets';
+import { Stars, Stars2 } from 'assets';
 
 
 export const Container = styled.div`
@@ -33,6 +33,8 @@ margin-left: -2.5%;
       }
   @media (max-width: 400px) {
       margin-left: 15%;
+      background-image: url(${Stars2.src});
+
       }
 `;
 
@@ -81,9 +83,9 @@ export const IphoneImg = styled(Image)`
 export const First = styled.div`
   display: flex;
   gap: 0;
-  align-items: center;
+  align-items: flex-start;
   @media (max-width: 1024px) {
-    align-items:flex-start;  }
+    justify-content:center  }
   @media (max-width: 400px) {
       flex-direction: column;
       align-items: center; }

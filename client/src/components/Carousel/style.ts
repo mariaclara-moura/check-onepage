@@ -5,7 +5,7 @@ export const CarouselContainer = styled.div`
   width: 40%;
   margin: 0;
 
-  @media (max-width: 758px) {
+  @media (max-width: 1024px) {
     width:100%;
   }
 
@@ -15,17 +15,24 @@ export const CarouselContainer = styled.div`
     height: 3rem;
     z-index: 10;
     @media (max-width: 1024px) { 
-     margin-top: 35%; }
+     margin-top: 42%; }
+     @media (max-width: 758px) {
+    margin-top: 35%;
+  } 
   }
 
   .slick-prev {
     left:22rem;
-    @media (max-width: 1024px) {
-    left:12rem;
-  }
     @media (max-width: 758px) {
     /* left:1rem */
     left:15rem;
+  } 
+  @media (max-width: 1024px) {
+    /* left:1rem */
+    left:28rem;
+  }
+  @media (max-width: 900px) and (min-width: 800px){
+     left:32rem;
   }
   @media (max-width:500px) {
     /* left:1rem */
@@ -34,8 +41,11 @@ export const CarouselContainer = styled.div`
   }
   .slick-next {
     right:0rem;
-    @media (max-width: 758px) and (min-width: 500px) {
-    //  right:2rem;
+    @media (max-width: 1024px)  {
+     right:6rem;
+  }
+  @media (max-width: 900px) and (min-width: 800px) {
+     right:8rem;
   }
   }
 
@@ -53,16 +63,13 @@ export const CarouselContainer = styled.div`
     transition: all 0.3s ease;
     @media (max-width: 758px) { 
       width: 5rem; }
-      @media (max-width: 1024px) and (min-width: 900px)  { 
-        width: 4rem; }
+      
   }
 
   /* Retângulo ativo */
   .slick-dots li.slick-active {
     background: #F5F5F7; 
     width: 5.5rem;
-    @media (max-width: 1024px) and (min-width: 900px) { 
-      width: 4rem; }
 
   }
 
