@@ -40,7 +40,7 @@ export const TableRow = styled.tr`
 `;
 
 export const TableCell = styled.td`
-  text-align: center;
+  text-align: left;
   padding: 0.9rem;
   color: #2C2C2C;
   font-family: Epilogue;
