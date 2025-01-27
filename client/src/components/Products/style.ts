@@ -40,6 +40,24 @@ export const TableRow = styled.tr`
 `;
 
 export const TableCell = styled.td`
+  text-align: center;
+  padding: 0.9rem;
+  color: #2C2C2C;
+  font-family: Epilogue;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  
+  @media (max-width: 1024px) {
+    font-size: 0.9rem;
+    padding: 1rem ;
+  }
+  @media (max-width: 768px) {
+    padding: 0.5rem 1.5rem ;
+  }
+`;
+
+export const TableCell2 = styled.td`
   text-align: left;
   padding: 0.9rem;
   color: #2C2C2C;
