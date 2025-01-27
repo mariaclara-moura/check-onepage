@@ -100,7 +100,7 @@ export const CheckIcon = styled.span`
 
 export const ButtonGroup = styled.div`
     display: flex;
-    width: 90%;
+    width: 80%;
     gap: 2rem;
     justify-content: flex-end;
 
