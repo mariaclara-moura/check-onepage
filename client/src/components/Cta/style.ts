@@ -6,13 +6,15 @@ import { Stars, Stars2 } from 'assets';
 export const Container = styled.div`
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   background: #EBF8F4;
   width: 80%;
+  max-width: 80%;
   padding: 1.5rem;
   gap: 0;
   margin: 5rem 0;
-  @media (max-width: 1024px) {
+  @media (max-width: 1300px) {
     flex-direction: column;
   }  `;
 
@@ -74,7 +76,7 @@ export const AppImage = styled(Image)`
 export const IphoneImg = styled(Image)`
     width: 12.5rem;
     height: auto;
-    @media (max-width: 1024px) {
+    @media (max-width: 1300px) {
     height: auto;
     width: 50%; 
     margin-top: 2%;}

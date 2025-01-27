@@ -52,7 +52,7 @@ export const TableCell = styled.td`
     font-size: 0.9rem;
     padding: 1rem ;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     padding: 0.5rem 1.5rem ;
   }
 `;
@@ -108,15 +108,23 @@ export const ButtonGroup = styled.div`
     button:hover {
     opacity: 0.9;
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 1300px) {
       align-self: center;
-      padding: 0rem;
-      gap: 0.1rem;
+      width:75%;
+      gap: 5%;
       button {
-      padding: 0.6rem;
-      font-size: 0.8rem;
+      padding: 0.5rem;
+      font-size: 0.7rem;
       }
     }
+    @media (max-width: 970px) {
+      width:85%;
+      gap:1.5%;
+      button {
+      padding: 0.5rem;
+      font-size: 0.7rem;
+      }
+    } 
     @media (min-width: 1500px) {
         gap: 2.5rem;
         }
