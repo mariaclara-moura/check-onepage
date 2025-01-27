@@ -70,6 +70,9 @@ export const CheckIcon = styled.span`
   font-family: Montserrat;
   font-size: 1.75rem;
   color: #115D6E;
+  @media (max-width: 768px) {
+    font-size:1.5rem;
+  }
   
 
   @media (max-width: 768px) {

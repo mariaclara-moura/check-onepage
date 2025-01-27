@@ -41,7 +41,7 @@ export const CarouselContainer = styled.div`
   }
   .slick-next {
     right:0rem;
-    @media (max-width: 1024px)  {
+    @media (max-width: 1024px) and (min-width: 901px)  {
      right:6rem;
   }
   @media (max-width: 900px) and (min-width: 800px) {
