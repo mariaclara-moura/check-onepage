@@ -118,8 +118,8 @@ export const ButtonGroup = styled.div`
       }
     }
     @media (min-width: 1500px) {
-
-        width: 87%;
+        gap: 2.2rem;
+        width: 88%;
         }
     //885-760-570
     @media (max-width: 500px) {
