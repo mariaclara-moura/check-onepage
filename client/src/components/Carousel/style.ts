@@ -16,7 +16,7 @@ export const CarouselContainer = styled.div`
     z-index: 10;
     @media (max-width: 1024px) { 
      margin-top: 42%; }
-     @media (max-width: 758px) {
+     @media (max-width: 500px) {
     margin-top: 35%;
   } 
   }
@@ -32,7 +32,7 @@ export const CarouselContainer = styled.div`
     left:28rem;
   }
   @media (max-width: 900px) and (min-width: 800px){
-     left:32rem;
+     left:30rem;
   }
   @media (max-width:500px) {
     /* left:1rem */
@@ -41,12 +41,10 @@ export const CarouselContainer = styled.div`
   }
   .slick-next {
     right:0rem;
-    @media (max-width: 1024px) and (min-width: 901px)  {
-     right:6rem;
+    @media (max-width: 1024px) and (min-width:800px)  {
+     right: 7rem;
   }
-  @media (max-width: 900px) and (min-width: 800px) {
-     right:8rem;
-  }
+  
   }
 
   .slick-dots {
