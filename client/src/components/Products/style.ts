@@ -119,7 +119,7 @@ export const ButtonGroup = styled.div`
     }
     @media (min-width: 1500px) {
 
-        width: 88%;
+        width: 87%;
         }
     //885-760-570
     @media (max-width: 500px) {
