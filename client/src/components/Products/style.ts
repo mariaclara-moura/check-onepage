@@ -100,7 +100,7 @@ export const CheckIcon = styled.span`
 
 export const ButtonGroup = styled.div`
     display: flex;
-    width: 80%;
+    width: 90%;
     gap: 2rem;
     justify-content: flex-end;
 
@@ -135,6 +135,11 @@ export const ButtonGroup = styled.div`
       font-size: 0.8rem;
       }
     }
+    @media (min-width: 1500px) {
+
+        width: 85%;
+        }
+
     //885-760-570
     @media (max-width: 500px) {
       align-self: center ;
